@@ -46,8 +46,39 @@ This project demonstrates the use of:
 
 - **HTML5**: For structuring the content.
 - **CSS3**: External stylesheet for design and layout.
-- **JavaScript (Optional)**: For button interactivity (if applicable).
 - **Media**: Images, audio files, and embedded video.
 
 ---
+
+2. Open `index.html` in your preferred web browser.
+
+---
+
+## HTML5 Tags Used
+Here is a list of HTML5 tags used in this project along with their purpose:
+1. `<header>`: Contains the website's navigation bar.
+2. `<section>`: Groups related content (e.g., About Us, Services).
+3. `<article>`: Represents individual pieces of content (e.g., blog posts or service descriptions).
+4. `<aside>`: Displays supplementary content like testimonials or promotions.
+5. `<footer>`: Includes contact information and copyright details.
+6. `<table>`: Used for displaying pricing packages in a tabular format.
+7. `<form>`:
+- Includes inputs for text, email, password, and a datalist for pet type selection.
+8. `<figure>` and `<figcaption>`: Displays images with captions.
+9. `<audio>`: Embeds an audio clip in the About Us section.
+10. `<video>`: Embeds a promotional video in the Why Fetch section.
+11. `<details>` and `<summary>`: Creates collapsible sections for detailed information.
+12. `mailto` and `tel`: Enables direct email or phone communication links.
+
+---
+
+## Screenshots
+### Home Page
+![Home Page Screenshot](assets/images/homepage.png)
+
+### Pricing Table
+![Pricing Table Screenshot](assets/images/pricing.png)
+
+---
+
 
