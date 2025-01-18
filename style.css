@@ -1,0 +1,619 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #2a9df4;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #007bff; 
+}
+
+.favicon {
+    width: 40px; /* Adjust size of the favicon */
+    height: 40px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.header-container h1 {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+/* Hero Section */
+#hero {
+    background-image: url('Images/DogBackground.jpg');
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    position: relative; 
+    
+}
+
+#hero .hero-content {
+    position: absolute;
+    top: 20px; /* Adjust vertical spacing from the top */
+    right: 20px; /* Adjust horizontal spacing from the right */
+    text-align: right; /* Aligns text to the right */
+    max-width: 30%;
+}
+
+#hero .hero-content p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+#hero .hero-content h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: right; /* Aligns text to the right */
+}
+
+
+#hero .hero-content button {
+    background-color: #ffa500; /* Orange button */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#hero .hero-content button:hover {
+    background-color: #e69500; /* Darker orange on hover */
+}
+
+/* Services Section */
+#services {
+    background-color: #87CEEB; /* Light blue background */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #f8f5e8; /* Cream color for heading */
+    margin-bottom: 2rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between items */
+}
+
+.service {
+    background-color: #5A9BD6; /* Slightly darker blue for service cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.service img {
+    width: 80px; /* Icon size */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* Why Fetch Section */
+#why-fetch {
+    background-color: #ffffff; /* White background */
+    padding: 4rem 2rem;
+}
+
+.why-fetch-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Space between items */
+}
+
+.why-fetch-text {
+    flex-basis: 45%; /* Takes up 45% of the width */
+}
+
+.why-fetch-text h2 {
+    color: #000000; /* Black heading color */
+}
+
+.why-fetch-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.why-fetch-text button {
+    background-color: #ffa500; /* Orange button */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.why-fetch-text button:hover {
+    background-color: #e69500; /* Darker orange on hover */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%; /* Full width of its container */
+    padding-top: 56.25%; /* Aspect ratio for 16:9 videos (9/16 = 0.5625) */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the wrapper */
+    height: 100%; /* Full height of the wrapper */
+}
+
+.why-fetch-video {
+    flex-basis: 45%; /* Takes up 45% of the width */
+}
+
+.why-fetch-video iframe {
+    width: 100%; /* Ensures video scales properly */
+    height: 100%; /* Maintains aspect ratio */
+}
+
+
+/* Table Section (Pricing) */
+/* Pricing Section */
+#pricing {
+    background-color: #f9f5e8; /* Light cream background */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#pricing h2 {
+    font-size: 2.5rem;
+    color: #d4cfc4; /* Subtle gray color for heading */
+    margin-bottom: 2rem;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between cards */
+}
+
+.pricing-card {
+    background-color: white; /* White card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2rem;
+    text-align: center;
+}
+
+.pricing-card img {
+    width: 60px; /* Icon size */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.pricing-card h3 {
+    font-size: 1.25rem;
+    color: #333; /* Dark text color for titles */
+    margin-bottom: 1rem;
+}
+
+.pricing-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color for prices */
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card button {
+    background-color: #00c4cc; /* Teal button */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.pricing-card button:hover {
+    background-color: #009fa3; /* Slightly darker teal on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fdf6e4; /* Light cream background */
+    color: #333; /* Dark text color */
+    padding: 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five equal columns */
+    gap: 2rem;
+}
+
+.footer-logo img {
+    width: 150px; /* Logo size */
+    height: auto;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #666; /* Subtle text color */
+}
+
+.footer-contact h3,
+.footer-services h3,
+.footer-newsletter h3,
+.footer-hours h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p,
+.footer-hours p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-services ul li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.footer-newsletter button {
+    background-color: #ff6b6b; /* Red button */
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #e55a5a; /* Darker red on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-bottom a {
+    color: #ff6b6b; /* Red links */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    margin-top: 0.5rem;
+}
+
+
+/* Contact Us Section */
+#contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #fff8e6;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+
+.contact-text h2 {
+    font-size: 2rem;
+    color: #333; /* Dark text color */
+}
+
+.contact-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-text a {
+    color: #6a0dad; /* Purple link color */
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.contact-form {
+    flex-basis: 50%; /* Right section takes up 50% of width */
+    background-color: white; /* White form background */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block; /* Ensures label is above input */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: none; /* Prevent resizing of textarea */
+}
+
+button[type='submit'] {
+    background-color: #6a0dad; /* Purple button background */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+button[type='submit']:hover {
+    background-color: #580c9e; /* Darker purple on hover */
+}
+
+/* About Us Section */
+#about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-text {
+    width: 50%;
+}
+
+.about-us-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us-text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-us-text button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.about-us-image {
+    width: 40%;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+audio {
+    margin-top: 20px;
+    width: 100%; /* Makes it responsive */
+}
+aside {
+    background-color: #f9f5e8; /* Light cream background */
+    border-left: 4px solid #ffa500; /* Orange border for emphasis */
+    padding: 1rem;
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: #555; /* Subtle text color */
+}
+
+aside h3 {
+    font-size: 1.25rem;
+    color: #333; /* Darker heading color */
+    margin-bottom: 0.5rem;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 0.75rem;
+}
+
+table th {
+    background-color: #f4f4f4; /* Light gray background for headers */
+    color: #333; /* Dark text color */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+/* Styling for Datalist Input */
+#pet-type {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+}
+.about-us-image figure {
+    text-align: center;
+    margin: 0;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.about-us-image figcaption {
+    font-size: 0.9rem;
+    color: #555; /* Subtle text color */
+    margin-top: 0.5rem;
+}
+/* Styling for Details and Summary */
+details {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #333; /* Dark text color */
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #007bff; /* Blue color for summary */
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+details p {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
