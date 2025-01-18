@@ -72,13 +72,4 @@ Here is a list of HTML5 tags used in this project along with their purpose:
 
 ---
 
-## Screenshots
-### Home Page
-![Home Page Screenshot](assets/images/homepage.png)
-
-### Pricing Table
-![Pricing Table Screenshot](assets/images/pricing.png)
-
----
-
 
